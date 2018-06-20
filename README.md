@@ -14,5 +14,6 @@ How to run:
 - restore nuget package.
 - update db with EF core migration
 - run the script in IntrastructureLayer/SetupScript for posgres and rabbitMQ
+- build then set startup project to both PresentationLayer and Consumer (this is the logging console application for getting RabbitMQ messages )
 
 
