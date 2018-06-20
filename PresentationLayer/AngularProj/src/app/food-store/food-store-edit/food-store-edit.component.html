@@ -1,0 +1,16 @@
+<h2>food-store-edit works!</h2>
+<div>
+  <form (ngSubmit)="submitStore()">
+    <input type="hidden" [(ngModel)]="formData.id" name="id"/>
+    <div>
+      <label>Name</label>
+      <input type="text" [(ngModel)]="formData.name" name="name"/>
+    </div>
+    <div>
+      <label>Link</label>
+      <input type="text" [(ngModel)]="formData.link" name="link"/>
+    </div>
+    <input type="submit" title="Submit"/>
+  </form>
+</div>
+

@@ -1,0 +1,31 @@
+<h1>Food-stores Index</h1>
+<div>
+  <a routerLink="/foodstore/create">Create</a>
+</div>
+<div>
+  <table>
+    <thead>
+      <td>Id</td>
+      <td>Link</td>
+      <td>Name</td>
+      <td>Is Deleted</td>
+      <td>Action</td>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of data">
+        <td>{{item.id}}</td>
+        <td>{{item.link}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.isDeleted}}</td>
+        <td>
+          <span>
+            <input type="button" (click)="delete(item.id)" value="delete"/>
+          </span>
+          <span>
+              <input type="button" (click)="edit(item.id)" value="edit"/>
+            </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div> 
