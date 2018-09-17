@@ -14,7 +14,7 @@ II. Techstacks
 
 III. Roadmap
 16/9/2018: 
-  Before this point, in June, I've updated the project using these : cqrs,eventsourcing, angularjs 6, rabbitmq based on my research. After a few months later working in a real microservice project, I've spotted some interesting points ,which will be listed below. The solution is updated later by changing some point of the architect, I am currently working on these so be patient.
+- Before this point, in June, I've updated the project using these : cqrs,eventsourcing, angularjs 6, rabbitmq based on my research. After a few months later working in a real microservice project, I've spotted some interesting points ,which will be listed below. The solution is updated later by changing some point of the architect, I am currently working on these so be patient.
     1.using a event sourcing architecture, how can we check an entity that is conflict with other entities in business logic or keys?
       - the solution is keeping a event table and others current state tables in the write project
       - the read project will contain the denormalized version of these records
